@@ -14,7 +14,8 @@ curl -X POST localhost:3000/api/v1/fetch \
 -H 'Content-Type: application/json' \
 -d '{
       "manifest": "https://raw.githubusercontent.com/EugeneGrekov/QFetcherServer/master/test-files/manifest_w2.dat",
-      "filter": ["png", "json"]
+      "filter": ["csv","png", "json"],
+      "order":  ["value", "source"] 
     }' 
 ```
 
