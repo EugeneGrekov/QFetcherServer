@@ -6,7 +6,9 @@ Fetch academic questions, which are provided in several data formats. results re
 
 
 ## Build Docker
+```
 docker build -t grekove/qfetcher .
+```
 ## Run docker
 Regular run have always specify Google Secret Word (take it from e-mail)
 
