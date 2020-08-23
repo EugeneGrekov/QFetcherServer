@@ -1,10 +1,24 @@
+# Q-Fetcher
+Fetch academic questions, which are provided in several data formats. results required to be processed and returned to fetcher
+
+## Usage
 
 
 
 ## Build Docker
 docker build -t grekove/qfetcher .
 ## Run docker
-docker run -p 3000:3000 grekove/qfetcher
+Regular run have always specify Google Secret Word (take it from e-mail)
+
+: 
+```
+docker run -p 3000:3000 -e SECRET=__YOUR_GOOGLE_KEY__ grekove/qfetcher
+```
+Run with specified timeout
+```
+docker run -p 3000:3000 -e SECRET=__YOUR_GOOGLE_KEY__ -e TIMEOUT=1000 grekove/qfetcher
+```
+
 
 ## Run request:
 
